@@ -1,0 +1,16 @@
+.menu {
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin: 0 60px;
+  }
+
+  a {
+    color: #fff;
+  }
+}
+
