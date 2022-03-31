@@ -3,6 +3,10 @@
   padding: 17px;
 }
 
+.header-inner {
+  @include inner;
+}
+
 .header-wrap {
   display: flex;
   align-items: center;

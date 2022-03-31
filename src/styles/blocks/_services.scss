@@ -1,0 +1,8 @@
+.services {
+  padding: 130px 0;
+}
+
+.services-inner {
+  @include inner;
+  display: flex;
+}
