@@ -1,8 +1,48 @@
 .services {
   padding: 130px 0;
+  background-color: $color-light;
 }
 
 .services-inner {
   @include inner;
+  display: block;
+}
+
+.services-title {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 87px;
+  color: $color-dark;
+}
+
+.services-wrap {
   display: flex;
+  flex-wrap: nowrap;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.services-item {
+  flex-basis: 25%;
+  padding: $gap-half;
+}
+
+.services-figure {
+  position: relative;
+}
+
+.services-photo-desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 15px 0;
+  color: $color-light;
+  background-color: rgba(0, 0, 0, 0.4);
 }

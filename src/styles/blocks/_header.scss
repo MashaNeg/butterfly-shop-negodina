@@ -1,6 +1,11 @@
 .header {
-  background-color: $color-dark;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
   padding: 17px;
+  background-color: $color-dark;
 }
 
 .header-inner {
@@ -12,5 +17,5 @@
   align-items: center;
 }
  .main-logo {
-   margin-right: auto;
+  @include main-logo;
  }

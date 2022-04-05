@@ -1,0 +1,20 @@
+.footer {
+  background-color: $color-dark;
+}
+
+.footer-inner {
+  @include inner;
+  text-align-last: left;
+}
+
+.main-logo-footer {
+  @include main-logo;
+}
+
+.phone {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  color: $color-light;
+  text-decoration: none;
+}

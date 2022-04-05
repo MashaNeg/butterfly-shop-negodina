@@ -1,0 +1,39 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-field {
+  flex-basis: 100%;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.form-field-third {
+  flex-basis: 33.33%;
+  padding-left: $gap-half;
+  padding-right: $gap-half;
+}
+
+.form-input {
+  width: 100%;
+  padding: 35px 30px;
+  height: 104px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: $color-dark;
+  border-radius: 6px;
+  background-color: $color-light;
+}
+
+.form-label,
+.form-checkbox-label {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+// .form-label-btn {
+//   display: none;
+// }

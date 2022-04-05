@@ -8,8 +8,11 @@ $h1-fw: 400;
 
 // colors
 $color-dark: #333333;
-$color-light: #ff2d2d;
+$color-bright: #ff2d2d;
+$color-light: #fff;
 
 // indents
+$gap: 20px;
+$gap-half: calc($gap / 2);
 
 // breakpoints
