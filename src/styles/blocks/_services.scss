@@ -1,11 +1,18 @@
 .services {
   padding: 130px 0;
   background-color: $color-light;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 90px 0;
+  }
 }
 
 .services-inner {
   @include inner;
-  display: block;
 }
 
 .services-title {
@@ -14,24 +21,53 @@
   font-size: 64px;
   line-height: 87px;
   color: $color-dark;
+
+  @media (max-width: $tablet-max) {
+    font-size: 60px;
+    line-height: 82px;
+  }
+
+  @media (max-width: $mobile-max) {
+    font-size: 36px;
+    line-height: 49px;
+  }
 }
 
 .services-wrap {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin-top: 100px;
   margin-bottom: 120px;
   margin-left: -10px;
   margin-right: -10px;
+
+  @media (max-width: $tablet-max) {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-max) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .services-item {
   flex-basis: 25%;
   padding: $gap-half;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
 }
 
 .services-figure {
   position: relative;
+  align-items: center;
 }
 
 .services-photo-desc {
@@ -45,4 +81,8 @@
   padding: 15px 0;
   color: $color-light;
   background-color: rgba(0, 0, 0, 0.4);
+}
+
+.services-photo {
+  width: 100%;
 }

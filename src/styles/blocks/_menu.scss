@@ -1,12 +1,31 @@
 .menu {
+  @media (max-width: $mobile-max) {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 25px 0;
+    background-color: $color-dark;
+  }
+
   ul {
     display: flex;
     list-style-type: none;
     padding-left: 0;
+
+    @media (max-width: $mobile-max) {
+      display: block;
+      text-align: center;
+    }
   }
 
   li {
     margin: 0 30px;
+
+    @media (max-width: $mobile-max) {
+      margin-bottom: 10px;
+    }
   }
 
   a {

@@ -10,10 +10,18 @@
   text-align: left;
 }
 
-.form-field-third {
+.form-field-part {
   flex-basis: 33.33%;
   padding-left: $gap-half;
   padding-right: $gap-half;
+
+  @media (max-width: $tablet-max) {
+    flex-basis: 50%;
+  }
+
+  @media (max-width: $mobile-max) {
+    flex-basis: 100%;
+  }
 }
 
 .form-input {
@@ -35,6 +43,4 @@
   line-height: 27px;
 }
 
-// .form-label-btn {
-//   display: none;
-// }
+
