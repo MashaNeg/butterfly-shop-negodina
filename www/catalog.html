@@ -1,36 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Мой первый проект</title>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
   <header class="header">
     <div class="header-inner">
       <div class="header-wrap">
-        <a href="#" class="main-logo">Butterfly</a>
-        <nav class="menu">
+        <a href="index.html" class="main-logo">Butterfly</a>
+        <nav class="menu j-menu">
           <ul>
             <li>
-              <a href="#">Каталог</a>
+              <a href="catalog.html">Каталог</a>
             </li>
 
             <li>
-              <a href="#">Отзывы</a>
+              <a href="reviews.html">Отзывы</a>
             </li>
 
             <li>
-              <a href="#">Контакты</a>
+              <a href="contacts.html">Контакты</a>
             </li>
 
             <li>
-              <a href="#">FAQ</a>
+              <a href="faq.html">FAQ</a>
             </li>
           </ul>
         </nav>
+        <button class="burger j-burger">Menu</button>
       </div>
     </div>
   </header>
@@ -39,33 +41,103 @@
     <section class="services">
       <div class="services-inner">
         <h2 class="services-title">Наши работы</h2>
+
+        <ul class="catalog-filter">
+          <li class="catalog-filter-item">
+            <a href="#" class="catalog-link j-catalog-link" data-filter="all">Все</a>
+          </li>
+          <li class="catalog-filter-item">
+            <a href="#" class="catalog-link j-catalog-link" data-filter="strict">строгие</a>
+          </li>
+          <li class="catalog-filter-item">
+            <a href="#" class="catalog-link j-catalog-link" data-filter="fun">веселые</a>
+          </li>
+          <li class="catalog-filter-item">
+            <a href="#" class="catalog-link j-catalog-link" data-filter="pet">для животных</a>
+          </li>
+          <li class="catalog-filter-item">
+            <a href="#" class="catalog-link j-catalog-link" data-filter="child">детские</a>
+          </li>
+          <li class="catalog-filter-item">
+            <a href="#" class="catalog-link j-catalog-link" data-filter="adalt">для взрослых</a>
+          </li>
+        </ul>
+
         <div class="services-wrap">
-          <div class="services-item">
+          <div class="services-item" data-type="strict">
             <figure class="services-figure">
               <img src="images/services-item1.jpg" alt="Классическая черная бабочка" class="services-photo">
               <figcaption class="services-photo-desc">Бабочка такая</figcaption>
             </figure>
           </div>
-          <div class="services-item">
+          <div class="services-item" data-type="adalt">
             <figure class="services-figure">
               <img src="images/services-item2.jpg" alt="Бабочка с рисунками стрекозы" class="services-photo">
               <figcaption class="services-photo-desc">Бабочка растакая</figcaption>
             </figure>
           </div>
-          <div class="services-item">
+          <div class="services-item" data-type="adalt">
             <figure class="services-figure">
               <img src="images/services-item3.jpg" alt="Мужчина в костюме и в бабочке в клетку" class="services-photo">
               <figcaption class="services-photo-desc">Бабочка сякая</figcaption>
             </figure>
           </div>
-          <div class="services-item">
+          <div class="services-item" data-type="pet">
             <figure class="services-figure">
               <img src="images/services-item4.jpg" alt="Котик с розовой бабочкой" class="services-photo">
               <figcaption class="services-photo-desc">Кривая</figcaption>
             </figure>
           </div>
+          <div class="services-item" data-type="strict">
+            <figure class="services-figure">
+              <img src="images/services-item5.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Бабочка такая</figcaption>
+            </figure>
+          </div>
+          <div class="services-item" data-type="strict">
+            <figure class="services-figure">
+              <img src="images/services-item6.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Бабочка растакая</figcaption>
+            </figure>
+          </div>
+          <div class="services-item" data-type="child">
+            <figure class="services-figure">
+              <img src="images/services-item7.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Бабочка сякая</figcaption>
+            </figure>
+          </div>
+          <div class="services-item" data-type="strict">
+            <figure class="services-figure">
+              <img src="images/services-item8.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Кривая</figcaption>
+            </figure>
+          </div>
+          <div class="services-item" data-type="strict">
+            <figure class="services-figure">
+              <img src="images/services-item9.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Бабочка такая</figcaption>
+            </figure>
+          </div>
+          <div class="services-item" data-type="adalt">
+            <figure class="services-figure">
+              <img src="images/services-item10.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Бабочка растакая</figcaption>
+            </figure>
+          </div>
+          <div class="services-item" data-type="adalt">
+            <figure class="services-figure">
+              <img src="images/services-item11.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Бабочка сякая</figcaption>
+            </figure>
+          </div>
+          <div class="services-item" data-type="fun">
+            <figure class="services-figure">
+              <img src="images/services-item12.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Кривая</figcaption>
+            </figure>
+          </div>
         </div>
-        <a href="#" class="btn">Все бабочки</a>
+        <a href="catalog.html" class="btn">Все бабочки</a>
       </div>
     </section>
 
@@ -75,18 +147,19 @@
         <p class="order-desc">Заполните форму - наш мастер свяжется с вами, согласует удобное время для встречи. На
           встрече он снимет мерки и поможет обределиться с тканью.</p>
         <form action="#" class="form">
-          <div class="form-field form-field-third">
+          <div class="form-field form-field-part">
             <label for="name" class="form-label">Ваше имя</label>
             <input placeholder="Введите имя и фамилию" name="name" id="name" type="text" class="form-input">
           </div>
-          <div class="form-field form-field-third">
+          <div class="form-field form-field-part">
             <label for="phone" class="form-label">Телефон</label>
             <input name="phone" id="phone" type="text" class="form-input">
           </div>
-          <div class="form-field form-field-third">
+          <div class="form-field form-field-part">
             <button class="btn btn-order" type="submit">Заказать</button>
           </div>
         </form>
+        <button class="btn-order-tablet" type="submit">Заказать</button>
       </div>
     </section>
   </main>
@@ -114,8 +187,9 @@
     </div>
   </footer>
 
-
+  <script src="scripts/jquery-3.6.0.min.js"></script>
   <script src="scripts/script.js"></script>
-
 </body>
+
 </html>
+
