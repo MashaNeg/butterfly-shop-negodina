@@ -2,12 +2,12 @@
   padding: 220px 0 130px;
 }
 
-.contacts-title {
-  @include section-title;
-}
-
 .contacts-inner {
   @include inner;
+}
+
+.contacts-title {
+  @include section-title;
 }
 
 .tabs {

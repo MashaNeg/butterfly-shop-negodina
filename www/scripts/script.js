@@ -46,6 +46,26 @@ $(document).ready(function(){
     });
   });
 
+  // Аккордеон
+  let prevFaqBtn;
+
+  $('.j-faq-btn').on('click', function(){
+
+    if( prevFaqBtn === this) {
+      $(this).next().slideToggle();
+
+      return;
+    }
+
+    $('.j-faq-btn').next().slideUp();
+    $(this).next().slideDown();
+
+    prevFaqBtn = this;
+  })
+
+  // Карусель в отзывах
+  $('.j-reviews-corousel').slick();
+
 
 
 });
