@@ -24,11 +24,13 @@
   color: $color-dark;
 
   @media (max-width: $tablet-max) {
+    margin-bottom: 80px;
     font-size: 60px;
     line-height: 82px;
   }
 
   @media (max-width: $mobile-max) {
+    margin-bottom: 60px;
     font-size: 36px;
     line-height: 49px;
   }

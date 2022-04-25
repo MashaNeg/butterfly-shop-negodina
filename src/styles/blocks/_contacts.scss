@@ -50,3 +50,35 @@
     display: block;
   }
 }
+
+.contacts-item-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-info {
+  padding-left: 150px;
+  text-align: left;
+
+  p, a {
+    margin-bottom: 20px;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: $color-dark;
+    text-decoration: none;
+
+  }
+
+  .contacts-address {
+    margin-bottom: 20px;
+  }
+
+  .contacts-time {
+    margin-top: 20px;
+  }
+
+}
+
+

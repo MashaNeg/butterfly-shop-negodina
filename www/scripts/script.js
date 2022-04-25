@@ -24,6 +24,9 @@ $(document).ready(function(){
   $('.j-catalog-link').on('click', function(event){
     event.preventDefault();
 
+    $('.j-catalog-link').removeClass('active');
+    $(this).addClass('active');
+
     let filterData = $(this).data('filter');
 
     console.log(filterData);
