@@ -47,6 +47,7 @@
 .btn-order {
   min-width: 100%;
   padding: 34px;
+  margin-top: 30px;
   font-size: 28px;
   line-height: 34px;
   cursor: pointer;
@@ -63,6 +64,9 @@
 .btn-order-tablet {
   display: none;
   width: 100%;
+  margin-top: 40px;
+  margin-left: $gap-half;
+  margin-right: $gap-half;
   font-family: $font;
   padding: 35px 0;
   font-weight: 400;

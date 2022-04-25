@@ -5,14 +5,10 @@
 }
 
 .form-field {
-  flex-basis: 100%;
-  text-align: left;
-}
-
-.form-field-part {
   flex-basis: 33.33%;
   padding-left: $gap-half;
   padding-right: $gap-half;
+  text-align: left;
 
   @media (max-width: $tablet-max) {
     flex-basis: 50%;
