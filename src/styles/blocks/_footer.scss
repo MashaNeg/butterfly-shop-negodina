@@ -26,16 +26,6 @@
   }
 }
 
-.main-logo-footer {
-  @include main-logo;
-
-  @media (max-width: $mobile-max) {
-    margin: 0 auto;
-    font-size: 36px;
-    line-height: 49px;
-  }
-}
-
 .phone {
   font-weight: 400;
   font-size: 28px;
@@ -59,18 +49,17 @@
   padding: 0;
   margin: 0;
 
-  @media (max-width: $tablet-max) {
-    margin-right: 50px;
-  }
-
   @media (max-width: $mobile-max) {
     margin: 0 auto;
   }
 }
 
 .social-item {
-  margin: 0;
   margin-left: 15px;
+
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .social-link {

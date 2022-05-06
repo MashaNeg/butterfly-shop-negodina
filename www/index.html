@@ -39,12 +39,16 @@
 
   <main>
     <section class="promo">
-      <div class="promo-inner">
-        <div class="promo-wrap">
-          <h1 class="promo-title">Индивидуальный пошив<br>галстуков-бабочек</h1>
-          <a href="#" class="btn">Заказать бабочку</a>
+      <div class="promo-fade">
+        <div class="promo-inner">
+          <div class="promo-wrap">
+            <h1 class="promo-title">Индивидуальный пошив галстуков-бабочек</h1>
+            <a href="#" class="btn">Заказать бабочку</a>
+          </div>
         </div>
       </div>
+
+
     </section>
 
     <section class="services">
@@ -53,26 +57,26 @@
         <div class="services-wrap">
           <div class="services-item">
             <figure class="services-figure">
-              <img src="images/services-item1.jpg" alt="Классическая черная бабочка" class="services-photo">
-              <figcaption class="services-photo-desc">Бабочка такая</figcaption>
+              <a href="#" class="serv-link"><img src="images/services-item1.jpg" alt="Классическая черная бабочка" class="services-photo" >
+              <figcaption class="services-photo-desc">Бабочка такая</figcaption></a>
             </figure>
           </div>
           <div class="services-item">
             <figure class="services-figure">
-              <img src="images/services-item2.jpg" alt="Бабочка с рисунками стрекозы" class="services-photo">
-              <figcaption class="services-photo-desc">Бабочка растакая</figcaption>
+              <a href="#" class="serv-link"><img src="images/services-item2.jpg" alt="Бабочка с рисунками стрекозы" class="services-photo">
+              <figcaption class="services-photo-desc">Бабочка растакая</figcaption></a>
             </figure>
           </div>
           <div class="services-item">
             <figure class="services-figure">
-              <img src="images/services-item3.jpg" alt="Мужчина в костюме и в бабочке в клетку" class="services-photo">
-              <figcaption class="services-photo-desc">Бабочка сякая</figcaption>
+              <a href="#" class="serv-link"><img src="images/services-item3.jpg" alt="Мужчина в костюме и в бабочке в клетку" class="services-photo">
+              <figcaption class="services-photo-desc">Бабочка сякая</figcaption></a>
             </figure>
           </div>
           <div class="services-item">
             <figure class="services-figure">
-              <img src="images/services-item4.jpg" alt="Котик с розовой бабочкой" class="services-photo">
-              <figcaption class="services-photo-desc">Кривая</figcaption>
+              <a href="#" class="serv-link"><img src="images/services-item4.jpg" alt="Котик с розовой бабочкой" class="services-photo">
+              <figcaption class="services-photo-desc">Кривая</figcaption></a>
             </figure>
           </div>
         </div>
@@ -88,16 +92,15 @@
         <form action="#" class="form">
           <div class="form-field">
             <label for="name" class="form-label">Ваше имя</label>
-            <input placeholder="Введите имя и фамилию" name="name" id="name" type="text" class="form-input">
+            <input placeholder="Введите имя и фамилию" name="name" id="name" type="text" class="form-input" value="Иван Иванов">
           </div>
           <div class="form-field">
             <label for="phone" class="form-label">Телефон</label>
-            <input name="phone" id="phone" type="text" class="form-input">
+            <input name="phone" id="phone" type="tel" class="form-input" value="+7 800 888-88-88">
           </div>
-          <div class="form-field">
+          <div class="form-field form-field-tablet">
             <button class="btn btn-order" type="submit">Заказать</button>
           </div>
-          <button class="btn-order-tablet" type="submit">Заказать</button>
         </form>
       </div>
     </section>
@@ -106,7 +109,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-wrap">
-        <a href="index.html" class="main-logo-footer">Butterfly</a>
+        <a href="index.html" class="main-logo main-logo-footer">Butterfly</a>
         <a href="tel:+78128008080" class="phone">+7 812 800-80-80</a>
         <ul class="social">
           <li class="social-item">

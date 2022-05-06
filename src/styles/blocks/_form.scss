@@ -12,10 +12,15 @@
 
   @media (max-width: $tablet-max) {
     flex-basis: 50%;
+    &.form-field-tablet {
+      width: 100%;
+      flex-basis: 100%;
+    }
   }
 
   @media (max-width: $mobile-max) {
     flex-basis: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -32,8 +37,9 @@
   background-color: $color-light;
 }
 
-.form-label,
-.form-checkbox-label {
+.form-label {
+  display: block;
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;

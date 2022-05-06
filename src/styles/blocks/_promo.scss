@@ -1,19 +1,31 @@
 .promo {
-  margin: 0 auto;
-  padding: 290px 0 214px;
   background-image: url("/images/promo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  @media (max-width: $tablet-max) {
+    background-image: url("/images/promo-tablet.jpg");
+  }
+
+  @media (max-width: $mobile-max) {
+    background-image: url("/images/promo-tablet.jpg");
+  }
+}
+
+.promo-fade {
+  margin: 88px auto 0;
+  padding: 200px 0 214px;
   background-color: rgba(51, 51, 51, 0.4);
 
   @media (max-width: $tablet-max) {
-    padding: 270px 0 190px;
+    padding: 180px 0 190px;
     background-size: cover;
   }
 
   @media (max-width: $mobile-max) {
-    padding: 180px 0 100px;
+    margin: 68px auto 0;
+    padding: 110px 0 100px;
   }
 }
 
@@ -43,7 +55,4 @@
   }
 }
 
-.btn {
-  @include btn;
-}
 

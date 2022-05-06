@@ -4,12 +4,7 @@
   left: 0;
   top: 0;
   z-index: 1000;
-  padding: 16px 0;
   background-color: $color-dark;
-
-  @media (max-width: $tablet-max) {
-    padding: 20px 0;
-  }
 }
 
 .header-inner {
@@ -19,10 +14,6 @@
 .header-wrap {
   display: flex;
   align-items: center;
-}
-
-.main-logo {
-  @include main-logo;
 }
 
 .menu {

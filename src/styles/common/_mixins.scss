@@ -1,5 +1,6 @@
 @mixin inner {
-  max-width: 1278px;
+  max-width: 1278px + $gap;
+  padding: 0 $gap-half;
   margin: 0 auto;
   // border: 1px solid green;
 }
@@ -20,48 +21,5 @@
   @media (max-width: $mobile-max) {
     font-size: 36px;
     line-height: 49px;
-  }
-}
-
-@mixin btn {
-  display: inline-block;
-  min-width: 497px;
-  // height: 104px;
-  padding: 30px 0;
-  font-family: $font;
-  font-weight: 400;
-  font-size: 42px;
-  line-height: 57px;
-  text-align: center;
-  text-decoration: none;
-  color: $color-light;
-  border-radius: 6px;
-  background-color: $color-bright;
-
-  @media (max-width: $mobile-max) {
-    min-width: 278px;
-    padding: 20px 0;
-    font-size: 24px;
-    line-height: 33px;
-  }
-}
-
-@mixin main-logo {
-  font-family: $font;
-  font-weight: 600;
-  font-size: 42px;
-  line-height: 57px;
-  margin-right: auto;
-  text-decoration: none;
-  color: $color-light;
-
-  @media (max-width: $tablet-max) {
-    font-size: 36px;
-    line-height: 49px;
-  }
-
-  @media (max-width: $mobile-max) {
-    font-size: 28px;
-    line-height: 38px;
   }
 }
