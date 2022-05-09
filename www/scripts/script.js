@@ -67,8 +67,12 @@ $(document).ready(function(){
   })
 
   // Карусель в отзывах
-  $('.j-reviews-corousel').slick();
-
+  if ($('.j-reviews-corousel').length) {
+    $('.j-reviews-corousel').slick({
+      // prevArrow: '<img src="prev.jpg">'
+      // // nextArrow: '<img src="тут ссылка на правую картинку">'
+    });
+  }
 
 
 });

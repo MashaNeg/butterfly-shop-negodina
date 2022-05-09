@@ -41,8 +41,9 @@
   list-style-type: none;
   text-decoration: none;
 
-  @media (max-width: $mobile-max) {
-    display: block;
+  @media (max-width: $tablet-max) {
+    justify-content: flex-start;
+    overflow: auto;
   }
 
   li {
@@ -61,6 +62,7 @@
     line-height: 24px;
     text-transform: uppercase;
     text-decoration: none;
+    white-space: nowrap;
 
     &.active {
       color: $color-bright;

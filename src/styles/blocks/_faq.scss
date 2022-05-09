@@ -25,6 +25,7 @@
   line-height: 49px;
   background-color: $color-light;
   border: none;
+  cursor: pointer;
 
   @media (max-width: $tablet-max) {
     font-size: 32px;

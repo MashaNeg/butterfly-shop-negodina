@@ -25,7 +25,7 @@
 .burger {
   display: none;
 
-  @media (max-width: $mobile-max) {
+  @media (max-width: $tablet-max) {
     display: block;
   }
 }

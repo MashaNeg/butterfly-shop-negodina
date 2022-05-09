@@ -1,5 +1,9 @@
 .reviews {
   padding: 220px 0 130px;
+
+  @media (max-width: $tablet-max) {
+    padding: 120px 0 50px;
+  }
 }
 
 .reviews-inner {
@@ -19,6 +23,10 @@
   flex-basis: 100%;
   display: flex;
   align-items: center;
+
+  @media (max-width: $tablet-max) {
+    display: block;
+  }
 }
 
 .reviews-content {
@@ -35,12 +43,23 @@
   font-weight: 400;
   font-size: 48px;
   line-height: 65px;
+
+  @media (max-width: $tablet-max) {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 25px;
+  }
 }
 
 .reviews-quote {
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
+
+  @media (max-width: $tablet-max) {
+    font-size: 16px;
+    line-height: 25px;
+  }
 }
 
 .reviews-img-wrap {
@@ -49,11 +68,24 @@
   height: 304px;
   border-radius: 50%;
   overflow: hidden;
+
+  @media (max-width: $tablet-max) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 // Карусель
 .reviews-list {
   padding: 0 188px;
+
+  @media (max-width: $tablet-max) {
+    padding: 0 100px;
+  }
+
+  @media (max-width: $mobile-max) {
+    padding: 0 50px;
+  }
 
   .slick-arrow {
     position: absolute;
@@ -62,9 +94,15 @@
     margin: auto;
     width: 60px;
     height: 60px;
+
+    @media (max-width: $tablet-max) {
+      width: 35px;
+      height: 35px;
+    }
   }
 
   .slick-prev {
+    background-image: url('prev.jpg');
     left: 0;
     font-size: 0;
   }
